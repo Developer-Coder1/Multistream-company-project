@@ -222,6 +222,20 @@ const knowledge = [
     reply:
       "Right now this site focuses on Jinja Herbal Extracts. We do have additional wellness products like the Iru Antiseptic soap, more prodcuts coming soon we will update as they get listed.",
   },
+{
+  keywords: ["join", "member", "benefits", "joining", "why join", "perks"],
+  reply: `Here's why people join Multistream:<br><br>
+1. Fast-selling, highly effective products<br>
+2. Very rewarding compensation plan<br>
+3. Earn weekly based on team activities<br>
+4. Be your own boss<br>
+5. Time freedom<br>
+6. Build a network of like-minded people<br>
+7. Personal development<br>
+8. Team support<br>
+9. Solid, honest company management<br>
+10. Financial freedom while working from anywhere`,
+},
 ];
 
 // =========================================
