@@ -11,9 +11,11 @@ const navBar = document.querySelector(".nav-bar");
 menuBtn.addEventListener("click", () => {
   navBar.classList.toggle("menu-open");
 });
-document.querySelectorAll(".nav-links a").forEach((a) =>
-  a.addEventListener("click", () => navBar.classList.remove("menu-open"))
-);
+document
+  .querySelectorAll(".nav-links a")
+  .forEach((a) =>
+    a.addEventListener("click", () => navBar.classList.remove("menu-open")),
+  );
 
 // =========================================
 // CHAT WIDGET
@@ -39,7 +41,11 @@ function closeChat() {
 
 chatFab.addEventListener("click", openChat);
 chatClose.addEventListener("click", closeChat);
-if (chatOpenBtn) chatOpenBtn.addEventListener("click", (e) => { e.preventDefault(); openChat(); });
+if (chatOpenBtn)
+  chatOpenBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    openChat();
+  });
 
 // =========================================
 // CHAT KNOWLEDGE BASE
@@ -53,79 +59,168 @@ const knowledge = [
       "Jinja Herbal Extracts is a 100% natural wellness tonic made from traditional African herbs. It's designed to detoxify your body, boost energy, support immunity, and help with sleep, digestion, skin, and overall wellness.",
   },
   {
-    keywords: ["help", "benefit", "good for", "treat", "cure", "battle", "blood pressure", "diabetes", "sugar", "fatigue", "tired", "immune", "circulation", "ulcer", "pile", "arthritis", "infertility", "infection", "sleep", "skin", "digestion"],
+    keywords: [
+      "help",
+      "benefit",
+      "good for",
+      "treat",
+      "cure",
+      "battle",
+      "blood pressure",
+      "diabetes",
+      "sugar",
+      "fatigue",
+      "tired",
+      "immune",
+      "circulation",
+      "ulcer",
+      "pile",
+      "arthritis",
+      "infertility",
+      "infection",
+      "sleep",
+      "skin",
+      "digestion",
+    ],
     reply:
       "Jinja is formulated to support people dealing with things like fatigue, weak immunity, poor sleep, poor digestion, and general body wellness. Many users also take it to support healthy blood pressure, blood sugar, and circulation. Note: Jinja is a natural supplement, not a drug — for medical conditions always speak to your doctor.",
   },
   {
-    keywords: ["how", "take", "use", "dose", "dosage", "drink", "shot", "spoon"],
+    keywords: [
+      "how",
+      "take",
+      "use",
+      "dose",
+      "dosage",
+      "drink",
+      "shot",
+      "spoon",
+    ],
     reply:
-      "Jinja is easy to use — typically 1 to 2 shots (small cup) daily, morning or evening. Shake the bottle well before use. For specific dosage based on your needs, message us directly and we'll guide you.",
+      "Jinja is easy to use — 30mls morning and night with little warm water, (not for pregnant women, nursing mothers and children below 10).Ulcer patients should eat before taking",
   },
   {
-    keywords: ["safe", "side effect", "side-effect", "reaction", "harm", "danger"],
+    keywords: [
+      "safe",
+      "side effect",
+      "side-effect",
+      "reaction",
+      "harm",
+      "danger",
+    ],
     reply:
-      "Jinja is made from 100% natural herbs with no harsh chemicals. Most people tolerate it very well. If you're pregnant, breastfeeding, on medication, or have a medical condition, please consult your doctor before starting any supplement.",
+      "Jinja is made from 100% natural herbs with no harsh chemicals. Most people tolerate it very well. However it's not for pregnant women, Breastfeeding mothers, and children below 10.",
   },
   {
     keywords: ["ingredient", "contain", "inside", "made of", "formula"],
     reply:
-      "Jinja is a proprietary blend of traditional African herbal extracts, produced under the Vita Natural certification. For the full ingredient breakdown, message us directly and we'll share the product details.",
+      "Jinja is a proprietary blend of traditional African herbal extracts, It's NAFDAC approved. The active ingredients are Capolobia Alba, Cnetis ferruginea, Heliotropium indicum and water.",
   },
   {
-    keywords: ["price", "cost", "how much", "pay", "naira", "dollar", "pound", "expensive"],
+    keywords: [
+      "price",
+      "cost",
+      "how much",
+      "pay",
+      "naira",
+      "dollar",
+      "pound",
+      "expensive",
+    ],
     reply:
       "Pricing depends on where you're ordering from. To get an accurate price — including shipping to your country — please send us a message and we'll confirm the latest price and options for you.",
   },
   {
     keywords: ["order", "buy", "purchase", "get", "where"],
     reply:
-      "We'll set up the order process very soon. For now, the fastest way is to scroll to the 'Order Jinja' section and reach out to us — we'll handle the order and delivery directly.",
+      "Easy! Click the 'Order Jinja' button on this page — it opens WhatsApp with us directly, ready to send. Or WhatsApp us straight at +234 902 666 2733. We'll confirm your order, pricing, and arrange delivery.",
   },
   {
-    keywords: ["ship", "shipping", "deliver", "delivery", "international", "worldwide", "country", "uk", "us", "usa", "europe", "nigeria", "abroad"],
+    keywords: [
+      "ship",
+      "shipping",
+      "deliver",
+      "delivery",
+      "international",
+      "worldwide",
+      "country",
+      "uk",
+      "us",
+      "usa",
+      "europe",
+      "nigeria",
+      "abroad",
+    ],
     reply:
       "Yes — Jinja ships worldwide. Wherever you are, we can arrange delivery. Send us a message with your country and we'll confirm shipping time and cost.",
   },
   {
-    keywords: ["long", "result", "work", "see", "week", "month", "fast", "time"],
+    keywords: [
+      "long",
+      "result",
+      "work",
+      "see",
+      "week",
+      "month",
+      "fast",
+      "time",
+    ],
     reply:
       "Results vary by person. Many people notice improvements in energy and sleep within the first few weeks of consistent daily use. For deeper benefits like detox and full-body wellness, we recommend using it consistently for at least 1–3 months.",
   },
   {
-    keywords: ["pregnant", "pregnancy", "breastfeed", "baby", "child", "kid", "age"],
+    keywords: [
+      "pregnant",
+      "pregnancy",
+      "breastfeed",
+      "baby",
+      "child",
+      "kid",
+      "age",
+    ],
     reply:
-      "Jinja is formulated for adults. If you are pregnant, breastfeeding, or looking for something for a child, please consult your doctor first, and reach out to us for tailored advice.",
+      "Jinja is formulated for adults and young adults above 10. Jinja is not for Pregnant women, Breastfeeding mothers, and children below 10 .",
   },
   {
     keywords: ["nafdac", "approved", "certified", "regulate", "certification"],
     reply:
-      "Jinja is produced under professional standards and carries the Vita Natural certification. For full regulatory and certification details in your country, please message us.",
+      "Jinja is produced under professional standards and carries the NAFDAC certification.",
   },
   {
-    keywords: ["distributor", "distribute", "sell", "earn", "job", "business", "income", "work", "opportunity", "multistream"],
+    keywords: [
+      "distributor",
+      "distribute",
+      "sell",
+      "earn",
+      "job",
+      "business",
+      "income",
+      "work",
+      "opportunity",
+      "multistream",
+    ],
     reply:
       "Yes! Multistream is all about empowering people. You can become a distributor and earn weekly just using your phone — flexible time, work anywhere. Scroll to the 'Earn With Us' section or message us to get started.",
   },
   {
     keywords: ["contact", "phone", "number", "whatsapp", "email", "message"],
     reply:
-      "We'll be adding direct contact options very soon. For now, keep an eye on this page — the 'Order Jinja' button will connect you to us directly once contact is set up.",
+      "You can reach us on WhatsApp at +234 902 666 2733. Click the 'Order Jinja' button or tap the number in the Order section and we'll respond quickly.",
   },
   {
-    keywords: ["bottle", "size", "ml", "750", "quantity"],
+    keywords: ["bottle", "size", "ml", "750", "350", "quantity"],
     reply:
-      "Jinja Herbal Extracts comes in a 750ml bottle. One bottle lasts most people several weeks depending on daily intake.",
+      "Jinja Herbal Extracts comes in 2 sizes: 350ml and 750ml bottle. One big bottle lasts most people about 12 days depending on daily intake.",
   },
   {
     keywords: ["multistream", "company", "who", "brand", "tm ltd"],
     reply:
-      "Multistream TM Ltd is the company behind the distribution of Jinja. Our motto is 'Empowering People. Creating Freedom.' — we help people access wellness products and build income opportunities.",
+      "Multistream TM Ltd is the company behind the distribution of Jinja. We're all about empowering people — we help people access wellness products and build income opportunities.",
   },
   {
     keywords: ["soap", "cream", "other product"],
     reply:
-      "Right now this site focuses on Jinja Herbal Extracts. We do have additional wellness products coming soon — message us to stay updated.",
+      "Right now this site focuses on Jinja Herbal Extracts. We do have additional wellness products like the Iru Antiseptic soap, more prodcuts coming soon we will update as they get listed.",
   },
 ];
 
@@ -145,7 +240,11 @@ function getReply(userText) {
   const clean = userText.trim().toLowerCase();
 
   // Greetings
-  if (/^(hi|hello|hey|yo|hola|sup|good\s*(morning|afternoon|evening))\b/.test(clean)) {
+  if (
+    /^(hi|hello|hey|yo|hola|sup|good\s*(morning|afternoon|evening))\b/.test(
+      clean,
+    )
+  ) {
     return "Hi there! Welcome. Ask me anything about Jinja — how it works, benefits, how to order, or becoming a distributor.";
   }
   // Thanks
@@ -195,10 +294,13 @@ function handleUserMessage(text) {
   addMessage(text, "user");
   if (chatSuggestions) chatSuggestions.style.display = "none";
   const typing = showTyping();
-  setTimeout(() => {
-    typing.remove();
-    addMessage(getReply(text), "bot");
-  }, 600 + Math.random() * 400);
+  setTimeout(
+    () => {
+      typing.remove();
+      addMessage(getReply(text), "bot");
+    },
+    600 + Math.random() * 400,
+  );
 }
 
 // =========================================
