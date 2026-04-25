@@ -86,16 +86,7 @@ const knowledge = [
       "Jinja is formulated to support people dealing with things like fatigue, weak immunity, poor sleep, poor digestion, and general body wellness. Many users also take it to support healthy blood pressure, blood sugar, and circulation. Note: Jinja is a natural supplement, not a drug — for medical conditions always speak to your doctor.",
   },
   {
-    keywords: [
-      "how",
-      "take",
-      "use",
-      "dose",
-      "dosage",
-      "drink",
-      "shot",
-      "spoon",
-    ],
+    keywords: ["take", "use", "dose", "dosage", "drink", "shot", "spoon"],
     reply:
       "Jinja is easy to use — 30mls morning and night with little warm water, (not for pregnant women, nursing mothers and children below 10).Ulcer patients should eat before taking",
   },
@@ -200,7 +191,7 @@ const knowledge = [
       "multistream",
     ],
     reply:
-      "Yes! Multistream is all about empowering people. You can become a distributor and earn weekly just using your phone — flexible time, work anywhere. Scroll to the 'Earn With Us' section or message us to get started.",
+      " You can become a distributor and earn weekly just using your phone — flexible time, work anywhere. Scroll to the 'Earn With Us' section and click on the BECOME A DISTRIBUTOR button to get started.",
   },
   {
     keywords: ["contact", "phone", "number", "whatsapp", "email", "message"],
