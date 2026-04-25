@@ -222,9 +222,9 @@ const knowledge = [
     reply:
       "Right now this site focuses on Jinja Herbal Extracts. We do have additional wellness products like the Iru Antiseptic soap, more prodcuts coming soon we will update as they get listed.",
   },
-{
-  keywords: ["join", "member", "benefits", "joining", "why join", "perks"],
-  reply: `Here's why people join Multistream:<br><br>
+  {
+    keywords: ["join", "member", "benefits", "joining", "why join", "perks"],
+    reply: `Here's why people join Multistream:<br><br>
 1. Fast-selling, highly effective products<br>
 2. Very rewarding compensation plan<br>
 3. Earn weekly based on team activities<br>
@@ -235,7 +235,11 @@ const knowledge = [
 8. Team support<br>
 9. Solid, honest company management<br>
 10. Financial freedom while working from anywhere`,
-},
+  },
+  {
+    keywords: ["kids", "children", "child", "age", "young"],
+    reply: "Yes! Kids 10 and above can use this.",
+  },
 ];
 
 // =========================================
