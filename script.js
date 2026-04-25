@@ -191,7 +191,7 @@ const knowledge = [
       "multistream",
     ],
     reply:
-      " You can become a distributor and earn weekly just using your phone — flexible time, work anywhere. Scroll to the 'Earn With Us' section and click on the BECOME A DISTRIBUTOR button to get started.",
+      " You can become a distributor and earn weekly just using your phone — flexible time, work from anywhere. Scroll to the 'Earn With Us' section and click on the 'BECOME A DISTRIBUTOR' button to get started.",
   },
   {
     keywords: ["contact", "phone", "number", "whatsapp", "email", "message"],
