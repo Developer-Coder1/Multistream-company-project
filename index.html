@@ -11,15 +11,37 @@
       name="description"
       content="100% natural herbal wellness tonic from Multistream. Detox, energy, immunity, better sleep — delivered worldwide."
     />
+
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero-models.jpg"
+      fetchpriority="high"
+    />
+
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      />
+    </noscript>
+
+    <!-- Google Fonts — slim 3 weights only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- Cloudflare Web Analytics -->
     <script
       defer
@@ -99,7 +121,6 @@
             src="images/hero-models.jpg"
             alt="Wellness for men and women — Jinja Herbal Extracts"
             fetchpriority="high"
-            loading="eager"
             width="1200"
             height="800"
           />
