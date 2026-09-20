@@ -111,6 +111,18 @@ button {
   margin-bottom: 16px;
 }
 
+.eyebrow-2 {
+   display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: black;
+  background: var(--brand-green-light);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
 /* =========================================
    BUTTONS
    ========================================= */
@@ -1206,4 +1218,12 @@ button {
 }
 .save-banner i {
   color: var(--brand-orange);
+}
+
+video::-webkit-media-controls-panel {
+  opacity: 1 !important;
+  transition: none !important;
+}
+video::-webkit-media-controls {
+  opacity: 1 !important;
 }
